@@ -116,7 +116,7 @@ disqus:
 #################################### global configure #######################################
 
 username: 456838
-baseurl: /username
+baseurl: /github-pages
 markdown: redcarpet
 safe: false
 highlighter: pygments
