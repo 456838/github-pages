@@ -67,7 +67,7 @@ images/
 | --- | --- | --- | --- | --- |
 | 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 已实现 App 聚合页，首屏主入口指向 Uninstaller 官网 |
 | AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | origin 项目资料 | 已实现 |
-| AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已规划 |
+| AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已实现 |
 | 未来 App | `/<app-slug>/` | 按 App 确认 | 按 App 仓库确认 | 未创建 |
 
 ## App 提案索引
@@ -94,12 +94,12 @@ images/
 | 错误页 | `/404.html` | `404.html` | 共享站点 | 静态 404 页面 |
 | 广告声明文件 | `/app-ads.txt` | `app-ads.txt` | 共享站点 | Google AdMob app-ads 声明 |
 
-### 规划中的 App 页面
+### App 页面
 
 | 中文名 | 路由 | 文件路径 | 归属 | 功能 |
 | --- | --- | --- | --- | --- |
 | Origin官网页 | `/uninstaller/` | `uninstaller/index.html` | AppUninstaller origin | 完整版官网页，承接 ASO 文案、截图、安全说明和 Google Play 下载入口 |
-| Lite官网页 | `/uninstaller-lite/` | `uninstaller-lite/index.html` | AppUninstaller Lite | Lite 官网页，承接无广告定位、ASO 文案、截图和 Google Play 下载入口 |
+| Lite官网页 | `/uninstaller-lite/` | `uninstaller-lite/index.html` | AppUninstaller Lite | Lite 官网页，承接 Lite 项目资料中的 ASO 文案、截图和 Google Play 下载入口 |
 | App聚合页 | `/` | `index.html` | 共享站点 | 当两个或更多 App 官网上线后，根首页作为多 App 聚合入口 |
 
 ## AppUninstaller Origin 页面契约
@@ -135,6 +135,7 @@ images/
 | 定位 | Lightweight app uninstaller、app remover、batch uninstall、APK backup、storage cleanup |
 | 与 origin 的差异 | 无广告；除非用户改变策略，否则 ASO 和核心应用管理定位与 origin 保持一致 |
 | 主要素材 | lite 项目资料中的市场图版本归档与 Fastlane metadata |
+| ASO 关键词 | 与 origin 共用项目关键词池；页面写入推荐英文词、扩展英文词和本地化候选词，排除 `Avoid` 高风险词 |
 
 推荐页面结构：
 
@@ -163,6 +164,7 @@ images/
 
 - 先保证自然文案，关键词用于支撑页面，不要主导页面。
 - 页面应包含 App 名称、包名身份、核心使用场景和安全边界。
+- AppUninstaller origin 与 lite 共用同一套项目 ASO 关键词池；如果更新关键词研究文档，两个页面都要同步更新。
 - 避免不受支持的承诺，例如保证释放多少空间、绕过 Android 限制、删除受保护系统应用或修改系统区域。
 - 除非用户针对具体商店政策明确批准，否则避免价格或促销类表达。
 - 每个 App 页面应配置：

@@ -9,7 +9,11 @@
 - Origin 官网样式已创建：`css/uninstaller-site.css`。
 - Origin 官网素材已放入：`images/apps/appuninstaller-origin/`。
 - 站点规范和路书已中文化：`AGENTS.md`、`docs/site-route-book.md`。
-- Origin 和 Lite 已有独立提案：`docs/proposals/appuninstaller-origin.md`、`docs/proposals/appuninstaller-lite.md`。
+- Origin 和 Lite 均已有独立提案并均已实现：`docs/proposals/appuninstaller-origin.md`、`docs/proposals/appuninstaller-lite.md`。
+- Origin官网页（`uninstaller/index.html`）与 Lite官网页（`uninstaller-lite/index.html`）已部署高级华丽质感UI。
+- Origin 与 Lite 已共用同一套 AppUninstaller ASO 关键词池，页面内已写入推荐英文词、扩展英文词和本地化候选词，排除 `Avoid` 高风险词。
+- 用户可见页脚不展示 `app-ads.txt` 链接；根目录文件本身仍保留给广告平台读取。
+- 首页移动端横向溢出问题已修复，全站通过响应式回归检查。
 
 ## 本地运行方式
 
@@ -30,53 +34,9 @@ python3 -m http.server 4173 --bind 127.0.0.1
 - 首页桌面端首屏入口已经明确：顶部导航、首屏主按钮、App 卡片都能进入 Uninstaller 官网。
 - 文档中已避免出现本机绝对路径。
 - Google Play 链接指向 origin 包名：`com.hello.uninstaller`。
-- Origin 官网暂不放出 Lite 互链，避免 Lite 页面未实现前产生 404。
+- Origin 与 Lite 官网页均已存在，可以互链；互链时必须清楚区分包名。
 
-## 剩余问题
-
-### 1. 首页移动端存在横向溢出
-
-现象：
-
-- 390px 宽度下，首页首屏标题 `Uninstaller - App Cleaner` 右侧仍会被裁切。
-- 首屏 CTA 已调整为纵向排列，但页面整体仍疑似被某个宽元素撑开。
-
-建议处理：
-
-- 优先检查 `index.html` 首页首屏和 `css/uninstaller-site.css` 中的移动端规则。
-- 重点排查 header 导航、hero 背景区域、按钮组、App 卡片是否造成 `body` 横向滚动。
-- 修复后重新截 390px 宽度移动端截图确认无横向滚动。
-
-### 2. 需要补一次移动端和桌面端视觉回归
-
-建议至少检查：
-
-- `/` 桌面端 1440px。
-- `/` 移动端 390px。
-- `/uninstaller/` 桌面端 1440px。
-- `/uninstaller/` 移动端 390px。
-
-检查重点：
-
-- 首屏标题、按钮、导航不裁切。
-- 图片不遮挡文案。
-- 截图区不横向溢出。
-- 法务链接和 Google Play 链接可点击。
-
-### 3. Lite 官网尚未实现
-
-当前只完成 origin 官网。
-
-Lite 后续落地前需要：
-
-- 按 `docs/proposals/appuninstaller-lite.md` 实现 `uninstaller-lite/index.html`。
-- 新增 `images/apps/appuninstaller-lite/` 素材。
-- 更新 `docs/site-route-book.md`。
-- 更新 `docs/proposals/appuninstaller-lite.md`。
-- 再决定首页是否同时展示 origin 与 lite。
-- Lite 页面上线后，再考虑 origin 与 lite 的互链。
-
-### 4. 历史模板页面尚未整理
+### 1. 历史模板页面尚未整理
 
 以下页面仍是旧模板或共享历史页面：
 
@@ -104,6 +64,8 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 - 首页入口是否一眼能进入 Uninstaller 官网。
 - `/uninstaller/` 是否符合 origin 包名和 Google Play 链接。
+- `/uninstaller-lite/` 是否符合 lite 包名、Lite 项目资料文案和 Lite 项目素材。
+- 如果项目 ASO 关键词文档更新，必须同步更新 `/uninstaller/` 和 `/uninstaller-lite/` 两个页面的关键词索引。
 - 文档是否同步更新了对应提案。
 - 文档中不要出现本机绝对路径。
 - 不要提交 `.idea/`。

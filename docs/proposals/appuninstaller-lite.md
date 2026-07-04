@@ -17,6 +17,7 @@
 | 包名 | `com.hello.uninstaller.lite` |
 | Google Play | `https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite` |
 | 素材目录 | `images/apps/appuninstaller-lite/` |
+| 当前状态 | 已实现首版静态官网，并已改用 Lite 项目资料素材与描述 |
 
 ## 权威资料来源
 
@@ -26,6 +27,19 @@
 - Lite 关键词调研：lite 项目资料
 - Lite 市场图版本归档：lite 项目资料
 - 网站路书：本站项目资料
+
+## 首版实现记录
+
+- 新增页面：`uninstaller-lite/index.html`
+- 复用官网样式：`css/uninstaller-site.css`
+- 新增素材目录：`images/apps/appuninstaller-lite/`
+- 素材来源：Lite en-US fastlane metadata 中的 `featureGraphic.png` 与 5 张 `phoneScreenshots`。
+- 根首页入口：`index.html` 已加入 Lite 官网入口和 Google Play 入口。
+- 页面文案：已按 Lite en-US 商店资料中的 `title.txt`、`short_description.txt`、`full_description.txt` 调整。
+- ASO 关键词索引：已把项目关键词池中的 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词写入页面；`Avoid` 高风险词不进入官网页面。
+- 公开路径：`https://www.salton123.com/uninstaller-lite/`
+- Origin 互链：Lite 页导航可回到 `/uninstaller/`，并明确两者是不同包名。
+- 页脚链接：保留 Home、隐私政策、服务条款等用户入口，不在页面底部暴露 `app-ads.txt`。
 
 ## 页面范围
 
@@ -63,6 +77,7 @@
 ## 文案与 ASO 规则
 
 - Lite 可以与 origin 保持相同 ASO 主轴：`app uninstaller`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- Origin 与 Lite 共用同一套项目 ASO 关键词池，页面差异只体现在产品名、包名、Play 链接和素材来源。
 - Lite 差异表达必须清楚，但不使用容易触发价格或促销风险的表达，除非用户明确批准并更新本提案。
 - 不做关键词墙。
 - 安全表达必须包含 Android confirmation、no root、local-first processing。
@@ -76,6 +91,7 @@
 - lite Play 链接、包名、产品名、标题或 ASO 文案。
 - 根首页中 lite 的展示卡片或跳转。
 - 与 origin 的互链、对比或差异描述。
+- 页脚链接展示策略。
 
 ## 验证清单
 

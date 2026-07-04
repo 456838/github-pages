@@ -54,7 +54,9 @@
 - 公开路径：`https://www.salton123.com/uninstaller/`
 - 页面风格：浅色可信工具风，真实 feature graphic 首屏背景，真实手机截图展示。
 - 页面模块：首屏、信任点、核心功能、安全说明、截图展示、使用流程、FAQ、最终 CTA、页脚法务链接。
-- Lite 互链：首版暂不放出，避免在 `/uninstaller-lite/` 页面实现前产生 404；Lite 官网落地后再恢复互链。
+- Lite 互链：Lite 官网已落地，origin 页面可链接到 `/uninstaller-lite/`，但必须清楚说明 Lite 是另一个包名。
+- ASO 关键词索引：已复用 Lite 项目资料中的 AppUninstaller 关键词池，在页面中写入 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词；`Avoid` 高风险词不进入官网页面。
+- 页脚链接：保留 Home、隐私政策、服务条款等用户入口，不在页面底部暴露 `app-ads.txt`。
 
 ## 跳转规则
 
@@ -74,6 +76,7 @@
 ## 文案与 ASO 规则
 
 - 使用自然文案覆盖 `app uninstaller`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- Origin 与 Lite 共用同一套项目 ASO 关键词池，页面差异只体现在产品名、包名、Play 链接和素材来源。
 - 不做关键词墙。
 - 不使用价格、折扣、限时、免费等促销表达，除非用户明确批准并更新本提案。
 - 安全表达必须包含 Android confirmation、no root、local-first processing。
@@ -87,6 +90,7 @@
 - origin Play 链接、包名、产品名、标题或 ASO 文案。
 - 根首页中 origin 的展示卡片或跳转。
 - 与 lite 的互链、对比或差异描述。
+- 页脚链接展示策略。
 
 ## 验证清单
 
