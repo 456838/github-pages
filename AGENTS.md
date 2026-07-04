@@ -19,7 +19,7 @@
 - 域名配置：`CNAME` 和 `docs/CNAME`。
 - AdMob 广告声明：`app-ads.txt`。
 - 法务页面：`privacy-policy.html` 和 `terms-of-service.html`。
-- AppUninstaller 的商店文案、截图和 ASO 素材来自 `/Users/salton/codeGit/AppUninstaller`，不要凭空编写或混用。
+- AppUninstaller 的商店文案、截图和 ASO 素材来自对应 App 的项目资料，必须由用户确认来源后使用，不要凭空编写或混用。
 
 ## App 提案门禁
 

@@ -18,14 +18,15 @@
 | 包名 | `com.hello.uninstaller` |
 | Google Play | `https://play.google.com/store/apps/details?id=com.hello.uninstaller` |
 | 素材目录 | `images/apps/appuninstaller-origin/` |
+| 当前状态 | 已实现首版静态官网 |
 
 ## 权威资料来源
 
-- 商店文案：`/Users/salton/codeGit/AppUninstaller/docs/商品详情.txt`
-- Fastlane metadata：`/Users/salton/codeGit/AppUninstaller/docs/fastlane/metadata/android/`
-- 英文市场图：`/Users/salton/codeGit/AppUninstaller/docs/origin/store_image_versions/v27-2026-07-03-localized-watermarks/en-US/images/`
-- 原始截图：`/Users/salton/codeGit/AppUninstaller/docs/origin/snapshot/`
-- 网站路书：`/Users/salton/codeGit/github-pages/docs/site-route-book.md`
+- 商店文案：origin 项目资料
+- Fastlane metadata：origin 项目资料
+- 英文市场图：origin 项目资料
+- 原始截图：origin 项目资料
+- 网站路书：本站项目资料
 
 ## 页面范围
 
@@ -43,6 +44,17 @@
 - 不上传 Google Play。
 - 不修改价格、订阅、隐私政策正文或服务条款正文，除非用户明确要求。
 - 不承诺绕过 Android 限制、删除受保护系统应用或保证释放固定空间。
+
+## 首版实现记录
+
+- 新增页面：`uninstaller/index.html`
+- 新增样式：`css/uninstaller-site.css`
+- 新增素材目录：`images/apps/appuninstaller-origin/`
+- 根首页入口：`index.html` 首屏已直接展示 Uninstaller 名称、官网入口和 Google Play 入口。
+- 公开路径：`https://www.salton123.com/uninstaller/`
+- 页面风格：浅色可信工具风，真实 feature graphic 首屏背景，真实手机截图展示。
+- 页面模块：首屏、信任点、核心功能、安全说明、截图展示、使用流程、FAQ、最终 CTA、页脚法务链接。
+- Lite 互链：首版暂不放出，避免在 `/uninstaller-lite/` 页面实现前产生 404；Lite 官网落地后再恢复互链。
 
 ## 跳转规则
 
@@ -84,4 +96,3 @@
 - 图片路径从 `images/apps/appuninstaller-origin/` 读取。
 - 页脚包含隐私政策和服务条款。
 - 桌面端和移动端布局均已人工检查。
-

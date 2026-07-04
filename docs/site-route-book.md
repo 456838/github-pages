@@ -30,7 +30,7 @@
 | 构建步骤 | 无 |
 | 服务端运行时 | 无 |
 | JavaScript | 允许前端-only JavaScript |
-| 当前根首页 | 仍是 W3layouts Startup 模板占位内容 |
+| 当前根首页 | 已改为 App 聚合页，首屏直接引导到 Uninstaller 官网 |
 | 当前未跟踪状态 | `.idea/` 未跟踪，不属于站点内容 |
 
 ## 目标信息架构
@@ -65,9 +65,9 @@ images/
 
 | 产品 | 路由 | 包名 | 权威资料来源 | 状态 |
 | --- | --- | --- | --- | --- |
-| 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 现有模板页，后续应改为聚合页或用户批准的主推 App 官网 |
-| AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | `/Users/salton/codeGit/AppUninstaller/docs/商品详情.txt` 与 origin Fastlane 素材 | 已规划 |
-| AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | `/Users/salton/codeGit/AppUninstaller/docs/lite/商品详情.txt` 与 lite Fastlane 素材 | 已规划 |
+| 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 已实现 App 聚合页，首屏主入口指向 Uninstaller 官网 |
+| AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | origin 项目资料 | 已实现 |
+| AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已规划 |
 | 未来 App | `/<app-slug>/` | 按 App 确认 | 按 App 仓库确认 | 未创建 |
 
 ## App 提案索引
@@ -84,7 +84,7 @@ images/
 
 | 中文名 | 路由 | 文件路径 | 归属 | 功能 |
 | --- | --- | --- | --- | --- |
-| 首页 | `/` | `index.html` | 共享站点 | 当前模板首页；目标是站点聚合页或用户批准的主推 App 官网页 |
+| 首页 | `/` | `index.html` | 共享站点 | App 聚合页，首屏展示 Uninstaller 名称、官网入口和 Google Play 入口 |
 | 关于页 | `/about.html` | `about.html` | 历史/共享 | 当前模板关于页；尚未绑定具体 App |
 | 联系页 | `/contact.html` | `contact.html` | 历史/共享 | 当前模板联系页；尚未绑定具体 App |
 | 常见问题页 | `/faq.html` | `faq.html` | 历史/共享 | 当前模板 FAQ；后续可在批准后替换成 App FAQ |
@@ -112,7 +112,8 @@ images/
 | Play 链接 | `https://play.google.com/store/apps/details?id=com.hello.uninstaller` |
 | 定位 | Android app uninstaller、app remover、app manager、batch uninstall、APK backup、storage cleanup |
 | 安全表达 | 使用 Android 官方确认流程、无需 root、本地优先处理 |
-| 主要素材 | `/Users/salton/codeGit/AppUninstaller/docs/origin/store_image_versions/v27-2026-07-03-localized-watermarks/en-US/images/` |
+| 主要素材 | origin 项目资料中的英文市场图与截图归档 |
+| 网站素材 | `images/apps/appuninstaller-origin/` |
 
 推荐页面结构：
 
@@ -133,7 +134,7 @@ images/
 | Play 链接 | `https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite` |
 | 定位 | Lightweight app uninstaller、app remover、batch uninstall、APK backup、storage cleanup |
 | 与 origin 的差异 | 无广告；除非用户改变策略，否则 ASO 和核心应用管理定位与 origin 保持一致 |
-| 主要素材 | `/Users/salton/codeGit/AppUninstaller/docs/lite/store_image_versions/` 与 lite Fastlane metadata |
+| 主要素材 | lite 项目资料中的市场图版本归档与 Fastlane metadata |
 
 推荐页面结构：
 

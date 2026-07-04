@@ -20,12 +20,12 @@
 
 ## 权威资料来源
 
-- 商店文案：`/Users/salton/codeGit/AppUninstaller/docs/lite/商品详情.txt`
-- Fastlane metadata：`/Users/salton/codeGit/AppUninstaller/docs/lite/fastlane/metadata/android/`
-- Lite 生图说明：`/Users/salton/codeGit/AppUninstaller/docs/lite/ASO_IMAGE_GENERATION.md`
-- Lite 关键词调研：`/Users/salton/codeGit/AppUninstaller/docs/lite/ASO_KEYWORD_RESEARCH.md`
-- Lite 市场图版本归档：`/Users/salton/codeGit/AppUninstaller/docs/lite/store_image_versions/`
-- 网站路书：`/Users/salton/codeGit/github-pages/docs/site-route-book.md`
+- 商店文案：lite 项目资料
+- Fastlane metadata：lite 项目资料
+- Lite 生图说明：lite 项目资料
+- Lite 关键词调研：lite 项目资料
+- Lite 市场图版本归档：lite 项目资料
+- 网站路书：本站项目资料
 
 ## 页面范围
 
@@ -85,4 +85,3 @@
 - 图片路径从 `images/apps/appuninstaller-lite/` 读取。
 - 页脚包含隐私政策和服务条款。
 - 桌面端和移动端布局均已人工检查。
-
