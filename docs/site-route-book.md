@@ -1,6 +1,6 @@
 # ASO 官网路书
 
-最后更新：2026-07-04
+最后更新：2026-07-05
 
 ## 目标
 
@@ -110,7 +110,8 @@ images/
 | 中文名 | `卸载大师 - 应用清理` |
 | 包名 | `com.hello.uninstaller` |
 | Play 链接 | `https://play.google.com/store/apps/details?id=com.hello.uninstaller` |
-| 定位 | Android app uninstaller、app remover、app manager、batch uninstall、APK backup、storage cleanup |
+| 定位 | Android app uninstaller、app remover、app manager、batch remove apps、batch uninstall、APK backup、storage cleanup |
+| ASO 优先级 | 最高优先级：`uninstaller`；高潜力精准词：`app uninstaller`；短描述主轴：`App uninstaller, batch remove apps, APK backup, storage cleanup` |
 | 安全表达 | 使用 Android 官方确认流程、无需 root、本地优先处理 |
 | 主要素材 | origin 项目资料中的英文市场图与截图归档 |
 | 网站素材 | `images/apps/appuninstaller-origin/` |
@@ -118,7 +119,7 @@ images/
 推荐页面结构：
 
 1. 首屏：App 名称、Google Play CTA、主截图。
-2. 核心能力：batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
+2. 核心能力：batch remove apps、batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
 3. 安全与隐私：Android confirmation、本地优先、系统应用限制。
 4. 截图展示。
 5. 使用流程。
@@ -132,15 +133,15 @@ images/
 | 产品名 | `Uninstaller Lite` |
 | 包名 | `com.hello.uninstaller.lite` |
 | Play 链接 | `https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite` |
-| 定位 | Lightweight app uninstaller、app remover、batch uninstall、APK backup、storage cleanup |
+| 定位 | Lightweight app uninstaller、app remover、batch remove apps、batch uninstall、APK backup、storage cleanup |
 | 与 origin 的差异 | 无广告；除非用户改变策略，否则 ASO 和核心应用管理定位与 origin 保持一致 |
 | 主要素材 | lite 项目资料中的市场图版本归档与 Fastlane metadata |
-| ASO 关键词 | 与 origin 共用项目关键词池；页面写入推荐英文词、扩展英文词和本地化候选词，排除 `Avoid` 高风险词 |
+| ASO 关键词 | 与 origin 共用项目关键词池；最高优先级是 `uninstaller` 和 `app uninstaller`，并同步覆盖 `batch remove apps`、`APK backup`、`storage cleanup`；页面写入推荐英文词、扩展英文词和本地化候选词，排除 `Avoid` 高风险词 |
 
 推荐页面结构：
 
 1. 首屏：Lite 名称、经批准的无广告定位、Google Play CTA、主截图。
-2. 与 origin 对齐的核心能力。
+2. 与 origin 对齐的核心能力，重点覆盖 app uninstaller、batch remove apps、APK backup、storage cleanup。
 3. Lite 差异说明。
 4. 安全与隐私。
 5. 截图展示。
@@ -165,6 +166,7 @@ images/
 - 先保证自然文案，关键词用于支撑页面，不要主导页面。
 - 页面应包含 App 名称、包名身份、核心使用场景和安全边界。
 - AppUninstaller origin 与 lite 共用同一套项目 ASO 关键词池；如果更新关键词研究文档，两个页面都要同步更新。
+- 2026-07-05 起，官网与商店详情同步把 `uninstaller` 定为最高优先级，把 `app uninstaller` 定为高潜力精准词；首页、origin 页面和 lite 页面都要自然覆盖 `batch remove apps`、`APK backup`、`storage cleanup`。
 - 避免不受支持的承诺，例如保证释放多少空间、绕过 Android 限制、删除受保护系统应用或修改系统区域。
 - 除非用户针对具体商店政策明确批准，否则避免价格或促销类表达。
 - 每个 App 页面应配置：

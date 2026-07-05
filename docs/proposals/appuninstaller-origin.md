@@ -1,6 +1,6 @@
 # AppUninstaller Origin 官网提案
 
-最后更新：2026-07-04
+最后更新：2026-07-05
 
 ## 提案目标
 
@@ -33,7 +33,7 @@
 范围内：
 
 - 首屏产品定位、Google Play CTA、主截图。
-- 功能区：batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
+- 功能区：app uninstaller、batch remove apps、batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
 - 安全区：Android 官方确认流程、本地优先处理、系统应用限制。
 - 截图展示、使用流程、FAQ、最终 CTA、法务链接。
 - SEO/ASO 元信息：title、description、canonical、Open Graph、Twitter Card、SoftwareApplication JSON-LD。
@@ -56,6 +56,7 @@
 - 页面模块：首屏、信任点、核心功能、安全说明、截图展示、使用流程、FAQ、最终 CTA、页脚法务链接。
 - Lite 互链：Lite 官网已落地，origin 页面可链接到 `/uninstaller-lite/`，但必须清楚说明 Lite 是另一个包名。
 - ASO 关键词索引：已复用 Lite 项目资料中的 AppUninstaller 关键词池，在页面中写入 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词；`Avoid` 高风险词不进入官网页面。
+- 2026-07-05 ASO 同步：根据 Google Play 表现报告，把 `uninstaller` 定为最高优先级，把 `app uninstaller` 定为高潜力精准词，并在 title、description、首屏、结构化数据中同步 `batch remove apps`、`APK backup`、`storage cleanup`。
 - 页脚链接：保留 Home、隐私政策、服务条款等用户入口，不在页面底部暴露 `app-ads.txt`。
 
 ## 跳转规则
@@ -75,7 +76,8 @@
 
 ## 文案与 ASO 规则
 
-- 使用自然文案覆盖 `app uninstaller`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- 使用自然文案覆盖 `uninstaller`、`app uninstaller`、`batch remove apps`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- 关键词优先级：`uninstaller` 最高，`app uninstaller` 次高；`batch remove apps`、`APK backup`、`storage cleanup` 作为 title、description、首屏和结构化数据的常驻主轴。
 - Origin 与 Lite 共用同一套项目 ASO 关键词池，页面差异只体现在产品名、包名、Play 链接和素材来源。
 - 不做关键词墙。
 - 不使用价格、折扣、限时、免费等促销表达，除非用户明确批准并更新本提案。

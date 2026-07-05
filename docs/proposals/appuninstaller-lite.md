@@ -1,6 +1,6 @@
 # AppUninstaller Lite 官网提案
 
-最后更新：2026-07-04
+最后更新：2026-07-05
 
 ## 提案目标
 
@@ -37,6 +37,7 @@
 - 根首页入口：`index.html` 已加入 Lite 官网入口和 Google Play 入口。
 - 页面文案：已按 Lite en-US 商店资料中的 `title.txt`、`short_description.txt`、`full_description.txt` 调整。
 - ASO 关键词索引：已把项目关键词池中的 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词写入页面；`Avoid` 高风险词不进入官网页面。
+- 2026-07-05 ASO 同步：根据 Google Play 表现报告，把 `uninstaller` 定为最高优先级，把 `app uninstaller` 定为高潜力精准词，并在 title、description、首屏、结构化数据中同步 `batch remove apps`、`APK backup`、`storage cleanup`；本次不更新 Lite 截图、feature graphic 或素材路径。
 - 公开路径：`https://www.salton123.com/uninstaller-lite/`
 - Origin 互链：Lite 页导航可回到 `/uninstaller/`，并明确两者是不同包名。
 - 页脚链接：保留 Home、隐私政策、服务条款等用户入口，不在页面底部暴露 `app-ads.txt`。
@@ -46,7 +47,7 @@
 范围内：
 
 - 首屏 Lite 产品定位、Google Play CTA、主截图。
-- 功能区：batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
+- 功能区：app uninstaller、batch remove apps、batch uninstall、app remover、APK backup、storage cleanup、app manager、no root。
 - Lite 差异说明：无广告定位，且核心应用管理能力与 origin 对齐。
 - 安全区：Android 官方确认流程、本地优先处理、系统应用限制。
 - 截图展示、使用流程、FAQ、最终 CTA、法务链接。
@@ -76,7 +77,8 @@
 
 ## 文案与 ASO 规则
 
-- Lite 可以与 origin 保持相同 ASO 主轴：`app uninstaller`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- Lite 可以与 origin 保持相同 ASO 主轴：`uninstaller`、`app uninstaller`、`batch remove apps`、`app remover`、`batch uninstall`、`bulk uninstall`、`APK backup`、`storage cleanup`、`reclaim storage`、`app manager`、`no root`。
+- 关键词优先级：`uninstaller` 最高，`app uninstaller` 次高；`batch remove apps`、`APK backup`、`storage cleanup` 作为 title、description、首屏和结构化数据的常驻主轴。
 - Origin 与 Lite 共用同一套项目 ASO 关键词池，页面差异只体现在产品名、包名、Play 链接和素材来源。
 - Lite 差异表达必须清楚，但不使用容易触发价格或促销风险的表达，除非用户明确批准并更新本提案。
 - 不做关键词墙。
