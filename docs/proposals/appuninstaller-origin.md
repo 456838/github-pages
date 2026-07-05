@@ -50,7 +50,8 @@
 - 新增页面：`uninstaller/index.html`
 - 新增样式：`css/uninstaller-site.css`
 - 新增素材目录：`images/apps/appuninstaller-origin/`
-- 根首页入口：`index.html` 首屏已直接展示 Uninstaller 名称、官网入口和 Google Play 入口。
+- 根首页入口：`index.html` 作为 App 聚合页展示 origin/lite，首屏优先引导 Google Play 下载，下方卡片进入详情页。
+- 2026-07-05 转化优化：根首页首屏改为 App banner 轮播，每 5 秒在 origin/lite 之间切换；当前 banner 的主 CTA 和导航 CTA 直接指向对应 Google Play，App 卡片点击进入详情页。
 - 公开路径：`https://www.salton123.com/uninstaller/`
 - 页面风格：浅色可信工具风，真实 feature graphic 首屏背景，真实手机截图展示。
 - 页面模块：首屏、信任点、核心功能、安全说明、截图展示、使用流程、FAQ、最终 CTA、页脚法务链接。
@@ -73,6 +74,7 @@
 - `/uninstaller/` 的 canonical 必须指向 `https://www.salton123.com/uninstaller/`。
 - 该页面只能把主下载 CTA 指向 `com.hello.uninstaller`。
 - 可以在对比或页脚位置链接到 `/uninstaller-lite/`，但必须清楚说明 Lite 是另一个包名。
+- 根首页展示 origin 时，banner 主 CTA 必须指向 `com.hello.uninstaller` 的 Google Play；origin 卡片点击进入 `/uninstaller/` 详情页。
 
 ## 文案与 ASO 规则
 

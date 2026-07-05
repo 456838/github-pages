@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://www.salton123.com/images/apps/appuninstaller-origin/feature-graphic.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/uninstaller-site.css">
+    <link rel="stylesheet" href="css/uninstaller-site.css?v=20260705-banner">
 </head>
 
 <body class="uninstaller-site">
@@ -33,23 +33,41 @@
                     <li><a href="terms-of-service.html">Terms</a></li>
                     <li><a href="uninstaller/">Uninstaller</a></li>
                     <li><a href="uninstaller-lite/">Lite</a></li>
-                    <li><a class="nav-cta" href="#apps">View Apps</a></li>
+                    <li><a class="nav-cta" data-current-play href="https://play.google.com/store/apps/details?id=com.hello.uninstaller">Google Play</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero hub-hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <span class="eyebrow"><i class="fa fa-mobile" aria-hidden="true"></i> Android utility apps</span>
-                    <h1>Uninstaller - App Cleaner</h1>
-                    <p class="hero-lede">The official website for Android app uninstaller, batch remove apps, app remover, APK backup, and storage cleanup workflows.</p>
-                    <div class="hero-actions">
-                        <a class="button-primary" href="#apps">Explore Our Apps</a>
+        <section class="hero hub-hero app-banner-carousel banner-origin" id="home" data-app-carousel aria-label="Featured app downloads">
+            <article class="app-banner-slide is-active" data-slide data-play-url="https://play.google.com/store/apps/details?id=com.hello.uninstaller" data-banner-class="banner-origin">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="eyebrow"><i class="fa fa-mobile" aria-hidden="true"></i> Android app uninstaller</span>
+                        <h1>Uninstaller - App Cleaner</h1>
+                        <p class="hero-lede">App uninstaller for Android: batch remove apps, app remover workflows, APK backup, and storage cleanup with Android confirmation.</p>
+                        <div class="hero-actions">
+                            <a class="button-primary" data-current-play href="https://play.google.com/store/apps/details?id=com.hello.uninstaller">Get on Google Play</a>
+                        </div>
                     </div>
                 </div>
+            </article>
+            <article class="app-banner-slide" data-slide data-play-url="https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite" data-banner-class="banner-lite" aria-hidden="true">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="eyebrow"><i class="fa fa-mobile" aria-hidden="true"></i> Lightweight app uninstaller</span>
+                        <h1>Uninstaller Lite</h1>
+                        <p class="hero-lede">App uninstaller Lite: batch remove apps, APK backup, app remover, and storage cleanup in the Lite Google Play package.</p>
+                        <div class="hero-actions">
+                            <a class="button-primary" data-current-play href="https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite">Get on Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="banner-indicators" aria-label="Featured app selector">
+                <button class="banner-dot is-active" type="button" data-slide-target="0" aria-label="Show Uninstaller - App Cleaner"></button>
+                <button class="banner-dot" type="button" data-slide-target="1" aria-label="Show Uninstaller Lite"></button>
             </div>
         </section>
 
@@ -61,13 +79,13 @@
                     <p class="section-copy">Each App has its own page, Play Store link, screenshots, ASO copy, and proposal record.</p>
                 </div>
                 <div class="app-hub-grid">
-                    <article class="app-card">
+                    <article class="app-card app-card-clickable" data-detail-url="uninstaller/" tabindex="0" role="link" aria-label="Open Uninstaller - App Cleaner details">
                         <div class="app-card-copy">
                             <span class="section-kicker">Now live</span>
                             <h3>Uninstaller - App Cleaner</h3>
                             <p>App uninstaller for Android: batch remove apps, back up APK files, sort apps by size, and follow Android confirmation without root.</p>
                             <div class="hero-actions">
-                                <a class="button-primary" href="uninstaller/">Visit website</a>
+                                <a class="button-primary" href="uninstaller/">App details</a>
                                 <a class="button-secondary" href="https://play.google.com/store/apps/details?id=com.hello.uninstaller">Google Play</a>
                             </div>
                         </div>
@@ -76,13 +94,13 @@
                         </div>
                     </article>
 
-                    <article class="app-card">
+                    <article class="app-card app-card-clickable" data-detail-url="uninstaller-lite/" tabindex="0" role="link" aria-label="Open Uninstaller Lite details">
                         <div class="app-card-copy">
                             <span class="section-kicker">Now live</span>
                             <h3>Uninstaller Lite</h3>
                             <p>App uninstaller Lite: batch remove apps, APK backup, app remover, and storage cleanup in the Lite Google Play package.</p>
                             <div class="hero-actions">
-                                <a class="button-primary" href="uninstaller-lite/">Visit website</a>
+                                <a class="button-primary" href="uninstaller-lite/">App details</a>
                                 <a class="button-secondary" href="https://play.google.com/store/apps/details?id=com.hello.uninstaller.lite">Google Play</a>
                             </div>
                         </div>
@@ -108,6 +126,79 @@
             </div>
         </div>
     </footer>
+    <script>
+        (function () {
+            var carousel = document.querySelector('[data-app-carousel]');
+            var currentPlayLinks = document.querySelectorAll('[data-current-play]');
+
+            if (carousel) {
+                var slides = Array.prototype.slice.call(carousel.querySelectorAll('[data-slide]'));
+                var dots = Array.prototype.slice.call(carousel.querySelectorAll('[data-slide-target]'));
+                var bannerBackgrounds = {
+                    'banner-origin': 'radial-gradient(circle at 100% 0%, rgba(7, 155, 120, 0.08) 0%, transparent 40%), radial-gradient(circle at 0% 100%, rgba(33, 103, 214, 0.06) 0%, transparent 40%), linear-gradient(90deg, rgba(247, 250, 249, 1) 0%, rgba(247, 250, 249, 0.95) 46%, rgba(247, 250, 249, 0.2) 100%), url("/images/apps/appuninstaller-origin/feature-graphic.png") center right / cover no-repeat',
+                    'banner-lite': 'radial-gradient(circle at 100% 0%, rgba(7, 155, 120, 0.08) 0%, transparent 40%), radial-gradient(circle at 0% 100%, rgba(33, 103, 214, 0.06) 0%, transparent 40%), linear-gradient(90deg, rgba(247, 250, 249, 1) 0%, rgba(247, 250, 249, 0.95) 46%, rgba(247, 250, 249, 0.2) 100%), url("/images/apps/appuninstaller-lite/feature-graphic.png") center right / cover no-repeat'
+                };
+                var activeIndex = 0;
+                var timerId;
+
+                function showSlide(nextIndex) {
+                    activeIndex = nextIndex;
+                    slides.forEach(function (slide, index) {
+                        var isActive = index === activeIndex;
+                        slide.classList.toggle('is-active', isActive);
+                        slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+                    });
+                    dots.forEach(function (dot, index) {
+                        dot.classList.toggle('is-active', index === activeIndex);
+                    });
+                    var playUrl = slides[activeIndex].getAttribute('data-play-url');
+                    carousel.classList.remove('banner-origin', 'banner-lite');
+                    var bannerClass = slides[activeIndex].getAttribute('data-banner-class');
+                    if (bannerClass) {
+                        carousel.classList.add(bannerClass);
+                        carousel.style.background = bannerBackgrounds[bannerClass];
+                    }
+                    currentPlayLinks.forEach(function (link) {
+                        link.setAttribute('href', playUrl);
+                    });
+                }
+
+                function startTimer() {
+                    window.clearInterval(timerId);
+                    timerId = window.setInterval(function () {
+                        showSlide((activeIndex + 1) % slides.length);
+                    }, 5000);
+                }
+
+                dots.forEach(function (dot) {
+                    dot.addEventListener('click', function () {
+                        showSlide(Number(dot.getAttribute('data-slide-target')));
+                        startTimer();
+                    });
+                });
+
+                showSlide(0);
+                if (slides.length > 1) {
+                    startTimer();
+                }
+            }
+
+            document.querySelectorAll('[data-detail-url]').forEach(function (card) {
+                card.addEventListener('click', function (event) {
+                    if (event.target.closest('a')) {
+                        return;
+                    }
+                    window.location.href = card.getAttribute('data-detail-url');
+                });
+                card.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        window.location.href = card.getAttribute('data-detail-url');
+                    }
+                });
+            });
+        }());
+    </script>
 </body>
 
 </html>

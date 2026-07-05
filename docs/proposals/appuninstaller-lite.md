@@ -34,7 +34,8 @@
 - 复用官网样式：`css/uninstaller-site.css`
 - 新增素材目录：`images/apps/appuninstaller-lite/`
 - 素材来源：Lite en-US fastlane metadata 中的 `featureGraphic.png` 与 5 张 `phoneScreenshots`。
-- 根首页入口：`index.html` 已加入 Lite 官网入口和 Google Play 入口。
+- 根首页入口：`index.html` 作为 App 聚合页展示 origin/lite，首屏优先引导 Google Play 下载，下方卡片进入详情页。
+- 2026-07-05 转化优化：根首页首屏改为 App banner 轮播，每 5 秒在 origin/lite 之间切换；当前 banner 的主 CTA 和导航 CTA 直接指向对应 Google Play，App 卡片点击进入详情页。本次不更新 Lite 截图、feature graphic 或素材路径。
 - 页面文案：已按 Lite en-US 商店资料中的 `title.txt`、`short_description.txt`、`full_description.txt` 调整。
 - ASO 关键词索引：已把项目关键词池中的 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词写入页面；`Avoid` 高风险词不进入官网页面。
 - 2026-07-05 ASO 同步：根据 Google Play 表现报告，把 `uninstaller` 定为最高优先级，把 `app uninstaller` 定为高潜力精准词，并在 title、description、首屏、结构化数据中同步 `batch remove apps`、`APK backup`、`storage cleanup`；本次不更新 Lite 截图、feature graphic 或素材路径。
@@ -74,6 +75,7 @@
 - `/uninstaller-lite/` 的 canonical 必须指向 `https://www.salton123.com/uninstaller-lite/`。
 - 该页面只能把主下载 CTA 指向 `com.hello.uninstaller.lite`。
 - 可以在对比或页脚位置链接到 `/uninstaller/`，但必须清楚说明完整版是另一个包名。
+- 根首页展示 Lite 时，banner 主 CTA 必须指向 `com.hello.uninstaller.lite` 的 Google Play；Lite 卡片点击进入 `/uninstaller-lite/` 详情页。
 
 ## 文案与 ASO 规则
 

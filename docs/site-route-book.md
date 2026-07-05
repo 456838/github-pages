@@ -30,7 +30,7 @@
 | 构建步骤 | 无 |
 | 服务端运行时 | 无 |
 | JavaScript | 允许前端-only JavaScript |
-| 当前根首页 | 已改为 App 聚合页，首屏直接引导到 Uninstaller 官网 |
+| 当前根首页 | 已改为 App 聚合页，首屏使用 App banner 轮播并优先引导到 Google Play |
 | 当前未跟踪状态 | `.idea/` 未跟踪，不属于站点内容 |
 
 ## 目标信息架构
@@ -65,7 +65,7 @@ images/
 
 | 产品 | 路由 | 包名 | 权威资料来源 | 状态 |
 | --- | --- | --- | --- | --- |
-| 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 已实现 App 聚合页，首屏主入口指向 Uninstaller 官网 |
+| 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 已实现 App 聚合页，首屏 App banner 每 5 秒轮播 origin/lite，主入口指向当前 App 的 Google Play |
 | AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | origin 项目资料 | 已实现 |
 | AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已实现 |
 | 未来 App | `/<app-slug>/` | 按 App 确认 | 按 App 仓库确认 | 未创建 |
@@ -84,7 +84,7 @@ images/
 
 | 中文名 | 路由 | 文件路径 | 归属 | 功能 |
 | --- | --- | --- | --- | --- |
-| 首页 | `/` | `index.html` | 共享站点 | App 聚合页，首屏展示 Uninstaller 名称、官网入口和 Google Play 入口 |
+| 首页 | `/` | `index.html` | 共享站点 | App 聚合页，首屏 banner 每 5 秒循环展示 origin/lite，主 CTA 指向当前 App 的 Google Play，下方 App 卡片点击进入详情页 |
 | 关于页 | `/about.html` | `about.html` | 历史/共享 | 当前模板关于页；尚未绑定具体 App |
 | 联系页 | `/contact.html` | `contact.html` | 历史/共享 | 当前模板联系页；尚未绑定具体 App |
 | 常见问题页 | `/faq.html` | `faq.html` | 历史/共享 | 当前模板 FAQ；后续可在批准后替换成 App FAQ |
@@ -100,7 +100,7 @@ images/
 | --- | --- | --- | --- | --- |
 | Origin官网页 | `/uninstaller/` | `uninstaller/index.html` | AppUninstaller origin | 完整版官网页，承接 ASO 文案、截图、安全说明和 Google Play 下载入口 |
 | Lite官网页 | `/uninstaller-lite/` | `uninstaller-lite/index.html` | AppUninstaller Lite | Lite 官网页，承接 Lite 项目资料中的 ASO 文案、截图和 Google Play 下载入口 |
-| App聚合页 | `/` | `index.html` | 共享站点 | 当两个或更多 App 官网上线后，根首页作为多 App 聚合入口 |
+| App聚合页 | `/` | `index.html` | 共享站点 | 当两个或更多 App 官网上线后，根首页作为多 App 聚合入口；首屏优先促进 Google Play 下载，卡片承接详情页跳转 |
 
 ## AppUninstaller Origin 页面契约
 
@@ -180,6 +180,7 @@ images/
 ## 导航规则
 
 - 根首页应链接到每一个已上线 App 官网。
+- 根首页首屏 App banner 可以直接链接到当前轮播 App 的 Google Play，用于提高下载转化；下方 App 卡片点击进入对应详情页。
 - App 官网页应能返回根首页。
 - App 官网页只能链接到对应包名的 Play Store 页面。
 - 每个 App 页面页脚都要保留法务链接。
