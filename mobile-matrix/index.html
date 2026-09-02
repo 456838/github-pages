@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Matrix | Android Device Control for macOS</title>
+    <meta name="description" content="Control Android devices from macOS with ADB, live screen mirroring, keyboard and touch input, clipboard sync, screenshots, multi-device previews, and STF Lite.">
+    <meta name="keywords" content="Android device control for macOS, ADB GUI for Mac, Android screen mirroring Mac, control Android phone from Mac, Android device manager desktop, multi-device Android testing, STF Lite">
+    <link rel="canonical" href="https://www.salton123.com/mobile-matrix/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mobile Matrix | Android Device Control for macOS">
+    <meta property="og:description" content="A local macOS workspace for Android device control, ADB management, screen mirroring, keyboard and touch input, and multi-device testing.">
+    <meta property="og:url" content="https://www.salton123.com/mobile-matrix/">
+    <meta property="og:image" content="https://www.salton123.com/images/apps/mobile-matrix/feature-graphic.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mobile Matrix | Android Device Control for macOS">
+    <meta name="twitter:description" content="Control Android devices locally from your Mac with ADB, screen mirroring, keyboard, touch, clipboard, and device tools.">
+    <meta name="twitter:image" content="https://www.salton123.com/images/apps/mobile-matrix/feature-graphic.png">
+    <link rel="icon" type="image/png" href="../images/apps/mobile-matrix/icon-1024.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/mobile-matrix-site.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Mobile Matrix",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS",
+        "description": "A local macOS workspace for controlling Android devices with ADB, live screen mirroring, keyboard and touch input, clipboard sync, screenshots, and STF Lite.",
+        "url": "https://www.salton123.com/mobile-matrix/",
+        "downloadUrl": "https://github.com/LiveSalton/mobile_matrix_flutter/releases/latest",
+        "softwareVersion": "1.0.1",
+        "codeRepository": "https://github.com/LiveSalton/mobile_matrix_flutter",
+        "featureList": [
+            "Android device control",
+            "ADB device management",
+            "Live Android screen mirroring",
+            "Keyboard and touch input",
+            "Clipboard synchronization",
+            "Multi-device preview"
+        ],
+        "author": {
+            "@type": "Organization",
+            "name": "LiveSalton"
+        }
+    }
+    </script>
+</head>
+
+<body class="mm-site">
+    <!-- 【Mobile Matrix官网页】面向 macOS 用户的 Android 设备控制、ADB 和多设备测试工作台官网 -->
+    <header class="mm-header">
+        <div class="mm-container mm-nav">
+            <a class="mm-brand" href="../" aria-label="Salton Apps home">
+                <img src="../images/apps/mobile-matrix/icon-1024.png" alt="Mobile Matrix app icon">
+                <span>Mobile Matrix</span>
+            </a>
+            <nav aria-label="Mobile Matrix navigation">
+                <a href="#features">Features</a>
+                <a href="#setup">Setup</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://github.com/LiveSalton/mobile_matrix_flutter">GitHub</a>
+                <a class="mm-nav-cta" href="https://github.com/LiveSalton/mobile_matrix_flutter/releases/latest">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="mm-hero">
+            <div class="mm-container mm-hero-grid">
+                <div class="mm-hero-copy">
+                    <p class="mm-eyebrow"><span class="mm-status-dot"></span> macOS · ADB · Android</p>
+                    <h1>Control Android devices from your Mac.</h1>
+                    <p class="mm-hero-lede">Mobile Matrix is a local desktop workspace for live Android screen mirroring, keyboard and touch input, clipboard sync, screenshots, device tools, and multi-device testing.</p>
+                    <div class="mm-actions">
+                        <a class="mm-button mm-button-primary" href="https://github.com/LiveSalton/mobile_matrix_flutter/releases/latest"><i class="fa fa-download" aria-hidden="true"></i> Download for macOS</a>
+                        <a class="mm-button mm-button-secondary" href="https://github.com/LiveSalton/mobile_matrix_flutter"><i class="fa fa-github" aria-hidden="true"></i> View on GitHub</a>
+                    </div>
+                    <p class="mm-hero-note">Current release: <strong>v1.0.1</strong> · Apple Silicon (arm64) · ad hoc signed</p>
+                </div>
+                <div class="mm-product-frame" aria-label="Mobile Matrix product preview">
+                    <div class="mm-window-bar">
+                        <span class="mm-window-dot mm-window-dot-red"></span>
+                        <span class="mm-window-dot mm-window-dot-yellow"></span>
+                        <span class="mm-window-dot mm-window-dot-green"></span>
+                        <span class="mm-window-title">Mobile Matrix</span>
+                    </div>
+                    <div class="mm-window-content">
+                        <aside class="mm-preview-sidebar">
+                            <div class="mm-preview-logo"><img src="../images/apps/mobile-matrix/icon-1024.png" alt=""></div>
+                            <span class="mm-preview-active"><i class="fa fa-th-large" aria-hidden="true"></i> Overview</span>
+                            <span><i class="fa fa-terminal" aria-hidden="true"></i> ADB tools</span>
+                            <span><i class="fa fa-sliders" aria-hidden="true"></i> Controls</span>
+                        </aside>
+                        <div class="mm-preview-main">
+                            <div class="mm-preview-header">
+                                <div><span class="mm-preview-kicker">DEVICE OVERVIEW</span><strong>Connected Android devices</strong></div>
+                                <span class="mm-preview-chip"><span class="mm-status-dot"></span> 3 online</span>
+                            </div>
+                            <div class="mm-device-grid">
+                                <div class="mm-device-card mm-device-card-active">
+                                    <div class="mm-device-screen mm-device-screen-blue"><span class="mm-screen-clock">09:41</span><span class="mm-screen-symbols">● ◇ ▪</span><div class="mm-screen-apps"><i class="fa fa-folder"></i><i class="fa fa-camera"></i><i class="fa fa-comments"></i><i class="fa fa-cog"></i></div></div>
+                                    <strong>Pixel 8 Pro</strong><small>USB · 1200 × 2640</small>
+                                </div>
+                                <div class="mm-device-card">
+                                    <div class="mm-device-screen mm-device-screen-purple"><span class="mm-screen-clock">10:12</span><span class="mm-screen-symbols">● ◇ ▪</span><div class="mm-screen-apps"><i class="fa fa-music"></i><i class="fa fa-map-marker"></i><i class="fa fa-envelope"></i><i class="fa fa-image"></i></div></div>
+                                    <strong>Galaxy S24</strong><small>USB · 1080 × 2340</small>
+                                </div>
+                                <div class="mm-device-card">
+                                    <div class="mm-device-screen mm-device-screen-green"><span class="mm-screen-clock">11:08</span><span class="mm-screen-symbols">● ◇ ▪</span><div class="mm-screen-apps"><i class="fa fa-play"></i><i class="fa fa-globe"></i><i class="fa fa-phone"></i><i class="fa fa-folder-open"></i></div></div>
+                                    <strong>Android test device</strong><small>Wi-Fi ADB · Online</small>
+                                </div>
+                            </div>
+                            <div class="mm-preview-toolbar"><span><i class="fa fa-keyboard-o" aria-hidden="true"></i> Keyboard input</span><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Touch control</span><span><i class="fa fa-clipboard" aria-hidden="true"></i> Clipboard</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mm-proof-strip" aria-label="Product facts">
+            <div class="mm-container mm-proof-grid">
+                <div><strong>Local-first</strong><span>Device control stays on your Mac</span></div>
+                <div><strong>STF Lite</strong><span>Bundled screen and input runtime</span></div>
+                <div><strong>ADB native</strong><span>USB debugging and device tools</span></div>
+                <div><strong>Open source</strong><span>Inspect the project on GitHub</span></div>
+            </div>
+        </section>
+
+        <section class="mm-section" id="features">
+            <div class="mm-container">
+                <div class="mm-section-heading">
+                    <p class="mm-section-kicker">One workspace, every essential control</p>
+                    <h2>Everything you need to work with Android devices on macOS.</h2>
+                    <p>Connect a real Android phone, see its live display, and keep the most common development and QA actions close at hand.</p>
+                </div>
+                <div class="mm-feature-grid">
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-blue"><i class="fa fa-th-large" aria-hidden="true"></i></span><h3>Multi-device overview</h3><p>See connected devices in one overview and jump into an isolated single-device control workspace.</p></article>
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-cyan"><i class="fa fa-desktop" aria-hidden="true"></i></span><h3>Live screen mirroring</h3><p>Inspect a real Android display with a local STF Lite screen stream and device-aware sizing.</p></article>
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-violet"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span><h3>Keyboard and touch input</h3><p>Type, tap, drag, navigate, and use hardware controls from the Mac while the phone keeps its native focus.</p></article>
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-green"><i class="fa fa-clipboard" aria-hidden="true"></i></span><h3>Clipboard and screenshots</h3><p>Move text between Mac and Android, or copy the current device screenshot directly to the Mac clipboard.</p></article>
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-amber"><i class="fa fa-terminal" aria-hidden="true"></i></span><h3>ADB tools</h3><p>Run shell commands and query system version, screen resolution, network information, and device state.</p></article>
+                    <article class="mm-feature-card"><span class="mm-feature-icon mm-icon-pink"><i class="fa fa-cubes" aria-hidden="true"></i></span><h3>Device workflows</h3><p>Install APKs, manage installed apps, open system settings, and configure Android developer options.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mm-section mm-section-dark" id="use-cases">
+            <div class="mm-container">
+                <div class="mm-section-heading mm-section-heading-light"><p class="mm-section-kicker">Built for practical Android work</p><h2>A focused desktop control surface for real devices.</h2><p>Mobile Matrix keeps the device visible and the surrounding tools organized, whether you are debugging one phone or checking a small device bench.</p></div>
+                <div class="mm-usecase-grid">
+                    <article class="mm-usecase-card"><span>01</span><h3>Android developers</h3><p>Inspect behavior on a physical phone without switching between separate mirroring, ADB, and input utilities.</p></article>
+                    <article class="mm-usecase-card"><span>02</span><h3>QA and mobile testing</h3><p>Keep multiple authorized devices visible, compare states, and open a dedicated control workspace when a test needs deeper interaction.</p></article>
+                    <article class="mm-usecase-card"><span>03</span><h3>Device operations</h3><p>Use one local dashboard for device discovery, APK management, system tools, clipboard workflows, and screen capture.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mm-section" id="setup">
+            <div class="mm-container mm-setup-grid">
+                <div class="mm-section-heading"><p class="mm-section-kicker">Start in a few minutes</p><h2>Connect Android to your Mac through ADB.</h2><p>The release package includes the desktop app and its STF Lite runtime. Your Android device only needs the standard developer options and USB debugging flow.</p><a class="mm-inline-link" href="https://github.com/LiveSalton/mobile_matrix_flutter#use-the-release-package">Read the setup notes <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+                <ol class="mm-steps">
+                    <li><span>1</span><div><strong>Download Mobile Matrix</strong><p>Get the latest Apple Silicon macOS release from GitHub.</p></div></li>
+                    <li><span>2</span><div><strong>Enable USB debugging</strong><p>Turn on Android developer options and USB debugging.</p></div></li>
+                    <li><span>3</span><div><strong>Approve ADB access</strong><p>Confirm the RSA debugging prompt when Android asks.</p></div></li>
+                    <li><span>4</span><div><strong>Select and control</strong><p>Choose the authorized device and open its live workspace.</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="mm-section mm-trust-section">
+            <div class="mm-container mm-trust-grid">
+                <div><p class="mm-section-kicker">Local by design</p><h2>A desktop tool with clear boundaries.</h2></div>
+                <div class="mm-trust-copy"><p>Mobile Matrix communicates with Android through the local ADB connection. Screen streaming and input are provided by the bundled STF Lite integration and runtime resources.</p><p>The current public release supports Apple Silicon macOS. Windows and Linux builds are not presented as supported until they have a validated distributable package.</p><div class="mm-boundary-list"><span><i class="fa fa-check" aria-hidden="true"></i> No cloud control service</span><span><i class="fa fa-check" aria-hidden="true"></i> No Docker or RethinkDB required</span><span><i class="fa fa-check" aria-hidden="true"></i> No Android client app required</span></div></div>
+            </div>
+        </section>
+
+        <section class="mm-section" id="faq">
+            <div class="mm-container">
+                <div class="mm-section-heading"><p class="mm-section-kicker">FAQ</p><h2>Questions before you connect a device?</h2></div>
+                <div class="mm-faq-grid">
+                    <details><summary>Which Mac is supported?</summary><p>The current public release is built and validated for Apple Silicon Macs using the arm64 architecture.</p></details>
+                    <details><summary>Does Mobile Matrix control an Android phone?</summary><p>Yes. It controls an authorized Android device connected through ADB, including live display, keyboard, touch, clipboard, screenshots, and device tools.</p></details>
+                    <details><summary>Is this the full STF server stack?</summary><p>No. Mobile Matrix embeds a focused STF Lite runtime for local screen streaming and device input. It does not claim to be the full STF server stack.</p></details>
+                    <details><summary>Can I use Wi-Fi ADB?</summary><p>The product includes ADB remote network debugging controls, but support depends on the Android device's wireless debugging mode and the configured endpoint.</p></details>
+                    <details><summary>Does it upload my screen to the cloud?</summary><p>The public desktop workflow is local-first: the app communicates with the Android device through the local ADB connection.</p></details>
+                    <details><summary>Are Windows and Linux available?</summary><p>Not as validated public release packages yet. The official download currently targets Apple Silicon macOS.</p></details>
+                </div>
+            </div>
+        </section>
+
+        <section class="mm-final-cta">
+            <div class="mm-container mm-final-cta-inner"><div><p class="mm-section-kicker">Ready to try it?</p><h2>Put your Android devices on one Mac workspace.</h2></div><div class="mm-actions"><a class="mm-button mm-button-primary" href="https://github.com/LiveSalton/mobile_matrix_flutter/releases/latest"><i class="fa fa-download" aria-hidden="true"></i> Download latest release</a><a class="mm-button mm-button-quiet" href="https://github.com/LiveSalton/mobile_matrix_flutter">Explore the source</a></div></div>
+        </section>
+    </main>
+
+    <footer class="mm-footer">
+        <div class="mm-container mm-footer-inner"><a class="mm-brand" href="../"><img src="../images/apps/mobile-matrix/icon-1024.png" alt="Mobile Matrix app icon"><span>Mobile Matrix</span></a><div class="mm-footer-links"><a href="../">Salton Apps</a><a href="https://github.com/LiveSalton/mobile_matrix_flutter">GitHub</a><a href="../privacy-policy.html">Privacy</a><a href="../terms-of-service.html">Terms</a></div><span class="mm-footer-copy">© 2026 Salton Apps</span></div>
+    </footer>
+</body>
+
+</html>

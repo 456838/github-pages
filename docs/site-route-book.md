@@ -1,6 +1,6 @@
 # ASO 官网路书
 
-最后更新：2026-07-05
+最后更新：2026-09-02
 
 ## 目标
 
@@ -30,7 +30,7 @@
 | 构建步骤 | 无 |
 | 服务端运行时 | 无 |
 | JavaScript | 允许前端-only JavaScript |
-| 当前根首页 | 已改为 App 聚合页，首屏使用 App banner 轮播并优先引导到 Google Play |
+| 当前根首页 | App 聚合页；首屏保留 origin/lite Google Play Banner，产品卡片包含 Mobile Matrix GitHub Release 入口 |
 | 当前未跟踪状态 | `.idea/` 未跟踪，不属于站点内容 |
 
 ## 目标信息架构
@@ -42,6 +42,8 @@ www.salton123.com
   │   └── AppUninstaller origin 官方落地页
   ├── /uninstaller-lite/
   │   └── AppUninstaller Lite 官方落地页
+  ├── /mobile-matrix/
+  │   └── Mobile Matrix macOS Android 设备控制官方落地页
   ├── /<app-slug>/
   │   └── 未来 App 官方落地页
   ├── /privacy-policy.html      共享或历史隐私政策页
@@ -68,6 +70,7 @@ images/
 | 站点聚合页 | `/` 或 `index.html` | 不适用 | 本仓库 | 已实现 App 聚合页，首屏 App banner 每 5 秒轮播 origin/lite，主入口指向当前 App 的 Google Play |
 | AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | origin 项目资料 | 已实现 |
 | AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已实现 |
+| Mobile Matrix | `/mobile-matrix/` | 不适用（macOS 桌面端） | `/Users/salton/codeGit/mobile_matrix_flutter` 与 GitHub Release | 已实现首版 |
 | 未来 App | `/<app-slug>/` | 按 App 确认 | 按 App 仓库确认 | 未创建 |
 
 ## App 提案索引
@@ -76,6 +79,7 @@ images/
 | --- | --- | --- |
 | AppUninstaller origin | `docs/proposals/appuninstaller-origin.md` | `/uninstaller/` 页面、origin 素材、origin SEO/ASO 文案、origin Play 链接、共享首页中 origin 展示 |
 | AppUninstaller Lite | `docs/proposals/appuninstaller-lite.md` | `/uninstaller-lite/` 页面、lite 素材、lite SEO/ASO 文案、lite Play 链接、共享首页中 lite 展示 |
+| Mobile Matrix | `docs/proposals/mobile-matrix.md` | `/mobile-matrix/` 页面、Mobile Matrix 素材、GitHub 仓库/Release 链接、共享首页中 Mobile Matrix 展示 |
 | 未来 App | `docs/proposals/<app-slug>.md` | 该 App 页面、素材、文案、跳转、共享入口 |
 
 ## 页面路书
@@ -100,6 +104,7 @@ images/
 | --- | --- | --- | --- | --- |
 | Origin官网页 | `/uninstaller/` | `uninstaller/index.html` | AppUninstaller origin | 完整版官网页，承接 ASO 文案、截图、安全说明和 Google Play 下载入口 |
 | Lite官网页 | `/uninstaller-lite/` | `uninstaller-lite/index.html` | AppUninstaller Lite | Lite 官网页，承接 Lite 项目资料中的 ASO 文案、截图和 Google Play 下载入口 |
+| Mobile Matrix官网页 | `/mobile-matrix/` | `mobile-matrix/index.html` | Mobile Matrix | macOS Android 设备控制、ADB、实时投屏、键盘触摸、剪贴板、设备工具和 GitHub Release 下载入口 |
 | App聚合页 | `/` | `index.html` | 共享站点 | 当两个或更多 App 官网上线后，根首页作为多 App 聚合入口；首屏优先促进 Google Play 下载，卡片承接详情页跳转 |
 
 ## AppUninstaller Origin 页面契约

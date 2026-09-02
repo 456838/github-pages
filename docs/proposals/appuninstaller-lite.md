@@ -1,6 +1,6 @@
 # AppUninstaller Lite 官网提案
 
-最后更新：2026-07-05
+最后更新：2026-09-02
 
 ## 提案目标
 
@@ -35,6 +35,7 @@
 - 新增素材目录：`images/apps/appuninstaller-lite/`
 - 素材来源：Lite en-US fastlane metadata 中的 `featureGraphic.png` 与 5 张 `phoneScreenshots`。
 - 根首页入口：`index.html` 作为 App 聚合页展示 origin/lite，首屏优先引导 Google Play 下载，下方卡片进入详情页。
+- 2026-09-02 共享首页新增 Mobile Matrix 产品卡片，但 origin/lite 首屏 Google Play Banner 轮播和 CTA 语义保持不变。
 - 2026-07-05 转化优化：根首页首屏改为 App banner 轮播，每 5 秒在 origin/lite 之间切换；当前 banner 的主 CTA 和导航 CTA 直接指向对应 Google Play，App 卡片点击进入详情页。本次不更新 Lite 截图、feature graphic 或素材路径。
 - 页面文案：已按 Lite en-US 商店资料中的 `title.txt`、`short_description.txt`、`full_description.txt` 调整。
 - ASO 关键词索引：已把项目关键词池中的 74 个推荐英文词、258 个扩展英文词和 298 个本地化候选词写入页面；`Avoid` 高风险词不进入官网页面。
