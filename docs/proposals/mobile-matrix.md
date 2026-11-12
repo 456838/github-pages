@@ -1,6 +1,6 @@
 # Mobile Matrix 官网提案
 
-最后更新：2026-09-02
+最后更新：2026-11-12
 
 ## 提案目标
 
@@ -43,6 +43,8 @@
 - 不修改共享隐私政策、服务条款或域名配置。
 
 ## 首版实现记录
+
+- 2026-11-12 共享首页新增 USB Camera 导航与产品卡片；Mobile Matrix 原有卡片、详情与 GitHub Release 地址不变。导航在窄屏按行换行；卡片键盘事件不再拦截内部链接的 Enter。
 
 - 新增页面：`mobile-matrix/index.html`
 - 新增页面样式：`css/mobile-matrix-site.css`

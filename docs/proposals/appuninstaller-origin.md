@@ -1,6 +1,6 @@
 # AppUninstaller Origin 官网提案
 
-最后更新：2026-09-02
+最后更新：2026-11-12
 
 ## 提案目标
 
@@ -46,6 +46,8 @@
 - 不承诺绕过 Android 限制、删除受保护系统应用或保证释放固定空间。
 
 ## 首版实现记录
+
+- 2026-11-12 共享首页新增 USB Camera 导航与产品卡片；保留 origin 的既有卡片、Google Play 地址和首屏轮播。导航在窄屏按行换行；卡片键盘事件不再拦截内部链接的 Enter。
 
 - 新增页面：`uninstaller/index.html`
 - 新增样式：`css/uninstaller-site.css`

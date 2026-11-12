@@ -1,6 +1,6 @@
 # ASO 官网路书
 
-最后更新：2026-09-02
+最后更新：2026-11-12
 
 ## 目标
 
@@ -30,7 +30,7 @@
 | 构建步骤 | 无 |
 | 服务端运行时 | 无 |
 | JavaScript | 允许前端-only JavaScript |
-| 当前根首页 | App 聚合页；首屏保留 origin/lite Google Play Banner，产品卡片包含 Mobile Matrix GitHub Release 入口 |
+| 当前根首页 | App 聚合页；首屏保留 origin/lite Google Play Banner，新增 USB Camera 产品卡片及兼容排障入口，保留 Mobile Matrix GitHub Release 入口 |
 | 当前未跟踪状态 | `.idea/` 未跟踪，不属于站点内容 |
 
 ## 目标信息架构
@@ -44,6 +44,8 @@ www.salton123.com
   │   └── AppUninstaller Lite 官方落地页
   ├── /mobile-matrix/
   │   └── Mobile Matrix macOS Android 设备控制官方落地页
+  ├── /usb-camera/
+  │   └── USB Camera UVC/OTG 兼容设备与连接排障官网
   ├── /<app-slug>/
   │   └── 未来 App 官方落地页
   ├── /privacy-policy.html      共享或历史隐私政策页
@@ -71,6 +73,7 @@ images/
 | AppUninstaller origin | `/uninstaller/` | `com.hello.uninstaller` | origin 项目资料 | 已实现 |
 | AppUninstaller Lite | `/uninstaller-lite/` | `com.hello.uninstaller.lite` | lite 项目资料 | 已实现 |
 | Mobile Matrix | `/mobile-matrix/` | 不适用（macOS 桌面端） | `/Users/salton/codeGit/mobile_matrix_flutter` 与 GitHub Release | 已实现首版 |
+| USB Camera: UVC Viewer & OTG | `/usb-camera/` | `com.hello.usbcamera` | `/Users/salton/codeGit/usb-camera-cli`、Google Play 商店页与本项目提案 | 已实现静态官网，用户验收通过 |
 | 未来 App | `/<app-slug>/` | 按 App 确认 | 按 App 仓库确认 | 未创建 |
 
 ## App 提案索引
@@ -80,6 +83,7 @@ images/
 | AppUninstaller origin | `docs/proposals/appuninstaller-origin.md` | `/uninstaller/` 页面、origin 素材、origin SEO/ASO 文案、origin Play 链接、共享首页中 origin 展示 |
 | AppUninstaller Lite | `docs/proposals/appuninstaller-lite.md` | `/uninstaller-lite/` 页面、lite 素材、lite SEO/ASO 文案、lite Play 链接、共享首页中 lite 展示 |
 | Mobile Matrix | `docs/proposals/mobile-matrix.md` | `/mobile-matrix/` 页面、Mobile Matrix 素材、GitHub 仓库/Release 链接、共享首页中 Mobile Matrix 展示 |
+| USB Camera | `docs/proposals/usb-camera.md` | `/usb-camera/` 页面、兼容与排障文案、SEO、素材、Play 链接、共享首页入口与站点地图 |
 | 未来 App | `docs/proposals/<app-slug>.md` | 该 App 页面、素材、文案、跳转、共享入口 |
 
 ## 页面路书
@@ -105,6 +109,7 @@ images/
 | Origin官网页 | `/uninstaller/` | `uninstaller/index.html` | AppUninstaller origin | 完整版官网页，承接 ASO 文案、截图、安全说明和 Google Play 下载入口 |
 | Lite官网页 | `/uninstaller-lite/` | `uninstaller-lite/index.html` | AppUninstaller Lite | Lite 官网页，承接 Lite 项目资料中的 ASO 文案、截图和 Google Play 下载入口 |
 | Mobile Matrix官网页 | `/mobile-matrix/` | `mobile-matrix/index.html` | Mobile Matrix | macOS Android 设备控制、ADB、实时投屏、键盘触摸、剪贴板、设备工具和 GitHub Release 下载入口 |
+| USB Camera兼容与排障官网页 | `/usb-camera/` | `usb-camera/index.html` | USB Camera | UVC 设备分类、OTG 三步排障、功能、FAQ 和 Google Play 下载入口；素材位于 `images/apps/usb-camera/` |
 | App聚合页 | `/` | `index.html` | 共享站点 | 当两个或更多 App 官网上线后，根首页作为多 App 聚合入口；首屏优先促进 Google Play 下载，卡片承接详情页跳转 |
 
 ## AppUninstaller Origin 页面契约
@@ -152,6 +157,15 @@ images/
 5. 截图展示。
 6. FAQ。
 7. 最终 Google Play CTA 和法务链接。
+
+## USB Camera 页面契约（2026-11-12）
+
+- 首页导航、USB Camera 产品卡片和页脚链接到 `usb-camera/`；产品页品牌与页脚返回 `../`。
+- 所有 USB Camera 下载入口仅使用 `https://play.google.com/store/apps/details?id=com.hello.usbcamera`，保留其他产品自己的下载入口。
+- 独立样式 `css/usb-camera-site.css` 使用 `.uc-site` 隔离；首页仅使用 `.apps-hub` 范围内的卡片图标与响应式导航规则。
+- 页面采用现成 `icon-1024.png`、`feature-graphic.png` 与本地 Font Awesome，FAQ 使用原生 `details/summary`，无构建及第三方运行时依赖。
+- 品牌及芯片列为待核对的设备系列，不暗示逐型号实测认证；4K、UVC 视频格式和 OTG 设置均描述真实硬件及系统限制。
+- SEO 的 canonical、社交预览及 JSON-LD 使用线上绝对 URL；页面内链接、样式、字体与图片使用相对路径。
 
 ## 未来 App 接入清单
 

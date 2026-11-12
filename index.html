@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Salton Apps | Android utilities and desktop device control</title>
-    <meta name="description" content="Official websites for Android utilities and Mobile Matrix desktop device control: app uninstaller, ADB management, screen mirroring, clipboard sync, and device tools.">
+    <meta name="description" content="Official Salton app websites: USB Camera for UVC and OTG viewing, Android app uninstallers, and Mobile Matrix desktop device control. Explore features and official downloads.">
     <meta name="keywords" content="Android utilities, Android device control for macOS, ADB, screen mirroring, app uninstaller, APK backup, storage cleanup, device tools">
     <link rel="canonical" href="https://www.salton123.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Salton Apps">
-    <meta property="og:description" content="Android utilities and desktop Android device control from Salton Apps, including app cleanup, ADB management, screen mirroring, and device tools.">
+    <meta property="og:description" content="USB Camera, Android app uninstallers and Mobile Matrix desktop device control. Explore Salton apps and their official downloads.">
     <meta property="og:url" content="https://www.salton123.com/">
     <meta property="og:image" content="https://www.salton123.com/images/apps/appuninstaller-origin/feature-graphic.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/uninstaller-site.css?v=20260705-banner">
+    <link rel="stylesheet" href="css/usb-camera-site.css">
 </head>
 
-<body class="uninstaller-site">
+<body class="uninstaller-site apps-hub">
     <!-- 【App聚合页】多 App 官网入口页，引导访问已上线 App 官网页 -->
     <header class="site-header">
         <div class="container">
@@ -32,6 +33,7 @@
                     <li><a href="privacy-policy.html">Privacy</a></li>
                     <li><a href="terms-of-service.html">Terms</a></li>
                     <li><a href="mobile-matrix/">Mobile Matrix</a></li>
+                    <li><a href="usb-camera/">USB Camera</a></li>
                     <li><a href="uninstaller/">Uninstaller</a></li>
                     <li><a href="uninstaller-lite/">Lite</a></li>
                     <li><a class="nav-cta" data-current-play href="https://play.google.com/store/apps/details?id=com.hello.uninstaller">Google Play</a></li>
@@ -75,11 +77,29 @@
         <section class="section" id="apps">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Available app</span>
+                    <span class="section-kicker">Available apps</span>
                     <h2 class="section-title">Choose an app website</h2>
                     <p class="section-copy">Each product has its own official page, capabilities, screenshots, download path, and source record.</p>
                 </div>
                 <div class="app-hub-grid">
+                    <article class="app-card app-card-clickable" data-detail-url="usb-camera/" tabindex="0" role="link" aria-label="Open USB Camera details and compatibility guide">
+                        <div class="app-card-copy">
+                            <span class="section-kicker">USB cameras &amp; OTG</span>
+                            <div class="app-card-identity">
+                                <img src="images/apps/usb-camera/icon-1024.png" alt="" width="48" height="48" loading="lazy">
+                                <h3>USB Camera: UVC Viewer &amp; OTG</h3>
+                            </div>
+                            <p>Turn your Android phone into a viewer for compatible USB cameras, endoscopes, microscopes and HDMI capture cards. Check device compatibility and get help connecting.</p>
+                            <div class="hero-actions">
+                                <a class="button-primary" href="usb-camera/">App details</a>
+                                <a class="button-secondary" href="https://play.google.com/store/apps/details?id=com.hello.usbcamera" target="_blank" rel="noopener">Google Play</a>
+                            </div>
+                        </div>
+                        <div class="app-card-media">
+                            <img src="images/apps/usb-camera/feature-graphic.png" width="1024" height="500" loading="lazy" alt="USB Camera external video viewer for Android">
+                        </div>
+                    </article>
+
                     <article class="app-card app-card-clickable" data-detail-url="uninstaller/" tabindex="0" role="link" aria-label="Open Uninstaller - App Cleaner details">
                         <div class="app-card-copy">
                             <span class="section-kicker">Now live</span>
@@ -136,6 +156,7 @@
                 <div class="footer-links">
                     <a href="uninstaller/">Uninstaller</a>
                     <a href="mobile-matrix/">Mobile Matrix</a>
+                    <a href="usb-camera/">USB Camera</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms-of-service.html">Terms of Service</a>
                     <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备15070400号-1</a>
@@ -208,6 +229,9 @@
                     window.location.href = card.getAttribute('data-detail-url');
                 });
                 card.addEventListener('keydown', function (event) {
+                    if (event.target !== card) {
+                        return;
+                    }
                     if (event.key === 'Enter' || event.key === ' ') {
                         event.preventDefault();
                         window.location.href = card.getAttribute('data-detail-url');

@@ -1,6 +1,6 @@
 # AppUninstaller Lite 官网提案
 
-最后更新：2026-09-02
+最后更新：2026-11-12
 
 ## 提案目标
 
@@ -29,6 +29,8 @@
 - 网站路书：本站项目资料
 
 ## 首版实现记录
+
+- 2026-11-12 共享首页新增 USB Camera 导航与产品卡片；保留 Lite 的既有卡片、Google Play 地址和首屏轮播。导航在窄屏按行换行；卡片键盘事件不再拦截内部链接的 Enter。
 
 - 新增页面：`uninstaller-lite/index.html`
 - 复用官网样式：`css/uninstaller-site.css`
