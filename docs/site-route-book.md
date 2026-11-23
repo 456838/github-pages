@@ -1,6 +1,6 @@
 # ASO 官网路书
 
-最后更新：2026-11-12
+最后更新：2026-11-23
 
 ## 目标
 
@@ -97,8 +97,8 @@ images/
 | 联系页 | `/contact.html` | `contact.html` | 历史/共享 | 当前模板联系页；尚未绑定具体 App |
 | 常见问题页 | `/faq.html` | `faq.html` | 历史/共享 | 当前模板 FAQ；后续可在批准后替换成 App FAQ |
 | 定价页 | `/pricing.html` | `pricing.html` | 历史/共享 | 当前模板定价页；只有在产品价格策略确认后才能使用 |
-| 隐私政策页 | `/privacy-policy.html` | `privacy-policy.html` | 法务/共享 | 隐私政策内容；除非用户要求，不要修改法务文案 |
-| 服务条款页 | `/terms-of-service.html` | `terms-of-service.html` | 法务/共享 | 服务条款内容；除非用户要求，不要修改法务文案 |
+| 隐私政策页 | `/privacy-policy.html` | `privacy-policy.html` | 法务/共享 | NewSalton 全线应用通用隐私政策页（2026-11-23 已按用户要求更新）；非用户明确授权勿擅改 |
+| 服务条款页 | `/terms-of-service.html` | `terms-of-service.html` | 法务/共享 | NewSalton 全线应用通用服务条款页（2026-11-23 已按用户要求更新）；非用户明确授权勿擅改 |
 | 错误页 | `/404.html` | `404.html` | 共享站点 | 静态 404 页面 |
 | 广告声明文件 | `/app-ads.txt` | `app-ads.txt` | 共享站点 | Google AdMob app-ads 声明 |
 
